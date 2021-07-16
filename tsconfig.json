@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "outDir": "./build/",
+        "module": "es6",
+        "moduleResolution": "node",
+        "target": "es5",
+        "jsx": "react",
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "lib": [
+            "es2015",
+            "dom",
+            "ES5",
+            "ES6",
+            "DOM.Iterable",
+            "ES2015.Iterable"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "@assets/*": ["./assets/*"],
+            "@src/*": ["./src/*"],
+            "@app/*": ["./src/app/*"],
+            "@components/*": ["./src/components/*"],
+            "@hooks/*": ["./src/hooks/*"],
+            "@infrastructure/*": ["./src/infrastructure/*"],
+            "@views/*": ["./src/views/*"]
+        }
+    },
+    "types" : ["material-ui", "react"],
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "build"
+    ]
+}
