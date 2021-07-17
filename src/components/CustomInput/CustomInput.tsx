@@ -8,6 +8,7 @@ import { typeOfPre } from '@src/components/CustomInput/common/data';
 interface iProps {
   id?: string | undefined;
   label?: string | undefined;
+  placeholder?: string | undefined;
   pre?: string | undefined;
   maxLength?: number | undefined;
   minLength?: number | undefined;
@@ -18,7 +19,7 @@ interface iProps {
 }
 
 const CustomInput: React.FC<iProps> = (props) => {
-  const { id, label, pre, maxLength, minLength, required, onChange, onFocus, error } = props;
+  const { id, label, placeholder, pre, maxLength, minLength, required, onChange, onFocus, error } = props;
   const [isError, setIsError] = useState<boolean>();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -59,7 +60,8 @@ const CustomInput: React.FC<iProps> = (props) => {
         minLength={minLength}
         onChange={(e) => handleChange(e)}
         onFocus={onFocus}
-        className="text-input shadow-3"
+        className="text-input"
+        placeholder={placeholder}
         style={{ textIndent: pre && '30px' }}
       />
     </div>

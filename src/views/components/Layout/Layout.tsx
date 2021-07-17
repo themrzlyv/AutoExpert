@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Header from '@views/components/Header';
-import Menu from '@views/components/Menu';
-import Footer from '@views/components/Footer';
+import { Col, Container, Row } from 'react-bootstrap';
+import Menu from '@views/components/Layout/components/Menu';
+import Footer from '@views/components/Layout/components/Footer';
 
 interface iLayout {
   children: JSX.Element & React.ReactNode;
@@ -10,12 +10,15 @@ interface iLayout {
 
 const Layout: React.FC<iLayout> = ({ children }) => {
   return (
-    <>
-      <Header />
+    <Container fluid>
       <Menu />
-      {children}
-      <Footer />
-    </>
+      <Row>
+        <Col style={{marginTop: '5em'}} xs={12}>{children}</Col>
+      </Row>
+      <Row>
+        <Footer />
+      </Row>
+    </Container>
   );
 };
 

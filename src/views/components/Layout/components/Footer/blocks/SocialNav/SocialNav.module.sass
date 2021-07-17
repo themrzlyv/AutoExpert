@@ -1,0 +1,49 @@
+@import './src/themes/Variables.scss'
+
+.iconBtn
+  background: none
+  border: 0
+  position: relative
+  vertical-align: middle
+  border-radius: 100%
+  box-shadow: none
+
+  &::after, &::before
+    box-sizing: inherit
+    content: ""
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    border-radius: 100%
+
+  &:hover
+    color: $white
+
+  &::before
+    border: 2px solid transparent
+
+  &:hover::before
+    border-top-color: $white
+    border-right-color: $white
+    border-bottom-color: $white
+    transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s
+
+  &::after
+    border: 0 solid transparent
+
+  &:hover::after
+    border-top: 2px solid $white
+    border-left-width: 2px
+    border-right-width: 2px
+    transform: rotate(270deg)
+    transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s
+
+  .icon
+    color: #bebdbde0
+    transition: color .3s ease
+    
+  &:hover .icon
+    color: $white
+    transition: color .3s ease

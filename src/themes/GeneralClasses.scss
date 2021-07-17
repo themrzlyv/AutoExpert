@@ -76,15 +76,19 @@
 }
 
 .text-input {
-  line-height: 2em;
-  background: rgb(255, 255, 255);
-  border-radius: 4px;
+  line-height: 2.3em;
+  background: #E6E6E6;
+  border-radius: 5px;
+
+  &::placeholder {
+    color: gray;
+  }
 }
 
 .pre-input {
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 6px;
+  left: 6px;
 }
 
 

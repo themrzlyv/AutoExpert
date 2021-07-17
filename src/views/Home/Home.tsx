@@ -2,9 +2,9 @@ import React from 'react';
 
 const Home: React.FC = () => {
   return (
-    <div className="container">
+    <div className="container" style={{height: '700vh'}}>
       <div className="row">
-        home
+        home page
       </div>
     </div>
   );
