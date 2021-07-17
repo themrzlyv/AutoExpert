@@ -9,13 +9,16 @@ import App from '@src/App';
 import '@src/themes/main.scss';
 
 import { AuthProvider } from '@infrastructure/services/context/AuthContext';
+import ErrorBoundary from '@views/components/ErrorBoundary';
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <ToastProvider autoDismissTimeout={2000}>
         <AuthProvider>
-          <App />
+          <ErrorBoundary>
+            <App />
+          </ErrorBoundary>
         </AuthProvider>
       </ToastProvider>
     </Router>

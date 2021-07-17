@@ -1,7 +1,7 @@
 import { Typography } from '@material-ui/core';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { partOfLogo } from '@views/components/Layout/components/Menu/common/constants';
+import { partOfLogo } from '@infrastructure/data/constants';
 
 const FooterLogo: React.FC = () => {
   return (

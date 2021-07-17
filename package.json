@@ -18,6 +18,7 @@
   "license": "MIT",
   "devDependencies": {
     "@material-ui/core": "^4.12.1",
+    "@material-ui/lab": "^4.0.0-alpha.60",
     "@svgr/webpack": "^5.5.0",
     "@types/query-string": "^6.3.0",
     "@types/react": "^17.0.3",

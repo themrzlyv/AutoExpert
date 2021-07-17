@@ -5,8 +5,8 @@ import styled from 'styled-components';
 import { ReactComponent as RacingIcon } from '@assets/svg/racing.svg';
 import { Typography } from '@material-ui/core';
 import { useAppSelector } from '@src/app/hooks.store';
-import { partOfLogo } from '@views/components/Layout/components/Menu/common/constants';
 import { menuWizardData } from '@infrastructure/services/selectors/appTools/Menu';
+import { partOfLogo } from '@infrastructure/data/constants';
 
 interface iProps {
   showSearch: boolean;
@@ -14,7 +14,7 @@ interface iProps {
 }
 
 const LogoContainer = styled.div<iProps>`
-  @media(max-width: 1100px){
+  @media (max-width: 1100px) {
     h4 {
       font-size: 1.7em;
     }
@@ -22,9 +22,9 @@ const LogoContainer = styled.div<iProps>`
       display: none;
     }
   }
-  @media(max-width: 930px){
+  @media (max-width: 930px) {
     h4 {
-      display: ${({ showSearch , showMenu }) => showSearch || showMenu ? 'none' : 'block'};
+      display: ${({ showSearch, showMenu }) => (showSearch || showMenu ? 'none' : 'block')};
       font-size: 1.5em;
     }
   }

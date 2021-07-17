@@ -1,8 +1,8 @@
 import React from 'react';
-import  MainPages  from '@views/MainPages';
+import MainPages from '@views/MainPages';
 import Layout from '@src/views/components/Layout';
 
-const App:React.FC = () => {
+const App: React.FC = () => {
   return (
     <Layout>
       <MainPages />
