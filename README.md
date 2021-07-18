@@ -1,8 +1,12 @@
-# Clone the repository
-git clone https://github.com/themrzlyv/React-Typescript-Redux-Toolkit-Webpack.git
+assets folder for your images, svg, fonts
 
-# Go inside the directory
-cd React-Typescript-Webpack
+public folder for your main index.html 
+
+src/app for main Redux architecture
+
+src/infrastructue for common datas , functions also api, context and selectors
+
+src/themes for global css files
 
 # Install dependencies
 yarn (or npm install)
